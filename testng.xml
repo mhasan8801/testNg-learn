@@ -4,8 +4,18 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="D:/Kuliah/QA projek/testNg-learn">
         <classes>
-            <class name="FistsTestCase"/>
-            <class name="SecondTestCase"/>
+            <class name="TC1_annotations">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="TC2_annotations">
+                <methods>
+                    <include name="test3"/>
+                    <include name="test4"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

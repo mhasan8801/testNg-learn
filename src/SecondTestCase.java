@@ -1,21 +1,29 @@
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class FistsTestCase {
+public class SecondTestCase {
 
     @Test(priority = 1)
-    public void setup()
+    void setup()
     {
         System.out.println("open browser");
     }
 
-    @Test(priority = 2)
-    public void login()
+    @Test(priority = 3)
+    void searchCustomer()
     {
-        System.out.println("This is login test");
+        System.out.println("This is search customer test");
+        Assert.assertEquals(1,1);
     }
 
-    @Test(priority = 3)
-    public void teardown()
+    @Test(priority = 2)
+    void addCustomer()
+    {
+        System.out.println("This is add customer test");
+    }
+
+    @Test(priority = 4)
+    void teardown()
     {
         System.out.println("closing browser");
     }
