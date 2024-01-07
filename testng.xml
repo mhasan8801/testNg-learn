@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="D:/Kuliah/QA projek/testNg-learn">
+    <test name="grouping test">
+        <groups>
+            <run>
+                <include name="sanity"/>
+<!--                <include name="regression"/>-->
+<!--                <exclude name="sanity"/>-->
+            </run>
+        </groups>
         <classes>
-            <class name="TC1_annotations">
-                <methods>
-                    <include name="test1"/>
-                    <include name="test2"/>
-                </methods>
-            </class>
-            <class name="TC2_annotations">
-                <methods>
-                    <include name="test3"/>
-                    <include name="test4"/>
-                </methods>
-            </class>
+            <class name="TC5_grouping"/>
         </classes>
     </test>
 </suite>
