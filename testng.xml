@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
-    <test name="Parameters test">
+<suite name="All Test Suite" parallel="tests" thread-count="2">
+
+    <test name="Parallel Test1">
         <classes>
-            <class name="TC7_Parameters"/>
+            <class name="ParalelTesting.ParalelTest1"/>
         </classes>
     </test>
+
+    <test name="Parallel Test2">
+        <classes>
+            <class name="ParalelTesting.ParalelTest2"/>
+        </classes>
+    </test>
+
 </suite>
