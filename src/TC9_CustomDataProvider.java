@@ -5,7 +5,7 @@ public class TC9_CustomDataProvider {
     @DataProvider(name = "LoginDataProvider")
     public Object[][] getData()
     {
-        Object[][] data = {  {"abc@gmail.com","abc"},{"mno@gmail.com","mno"},{"xyz@gmail.com","xyz"}};
+        Object[][] data = {  {"abc@gmail.com","abc"},{"mno@gmail.com","mno"},{"stu@gmail.com","stu"},{"xyz@gmail.com","xyz"}};
         return data;
     }
 
